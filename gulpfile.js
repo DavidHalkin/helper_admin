@@ -110,7 +110,7 @@ gulp.task('scripts', function() {
 //библиотеки css
 gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'bower_components/font-awesome/css/all.css',
+		'node_modules/@fortawesome/fontawesome-pro/css/all.css',
 		// 'bower_components/air-datepicker/dist/css/datepicker.min.css',
 		// 'node_modules/overlayscrollbars/css/OverlayScrollbars.min.css',
 		])

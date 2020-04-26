@@ -4,4 +4,12 @@
 '../../bower_components/bootstrap/scss/_variables.scss',
 '../../bower_components/bootstrap/scss/_mixins.scss',
 '_param',
-'header';
+'header',
+'_sidebar.scss';
+.main_wrapper{
+	padding-top:60px;
+	flex:1 0  auto;
+	.content_wrapper{
+		border-left: 1px solid #a4b9cc;
+	}
+}

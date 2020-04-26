@@ -1,0 +1,38 @@
+.sidebar_wrapper{
+	max-width: 320px;
+	flex: 0 0 320px;
+	.sidebar_nav{
+		max-width: 90px;
+		flex:0 0 90px;
+		background: #646c7a;
+		a{
+			display: block;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-radius: 5px;
+			&:hover{
+				text-decoration: none;
+				background-color: #7e8797;
+				box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgba(0,0,0,0.15), 0 -1px 0 0 rgba(0,0,0,0.05);
+				transition: background-color 0.15s ease-in, background-image 0.15s ease-in, box-shadow 0.15s ease-in;
+			}
+			span{
+				font-size: 11px;
+				line-height: 13px;
+				display: block;
+				color: #fff;
+			}
+		}
+		li{
+			margin-top: 7px;
+			&.active{
+				a{
+					background-color: rgba(65,71,82,0.8);
+					box-shadow: 0 1px 0 0 rgba(221,231,233,0.4), inset 0 1px 0 #31363f, inset 0 0 0 1px rgba(25,30,42,0.1), inset 0 1px 2px rgba(25,30,42,0.7);
+					background-image: linear-gradient(to bottom, rgba(37,43,48,0), rgba(37,43,48,1));
+				}
+			}
+		}
+	}
+}

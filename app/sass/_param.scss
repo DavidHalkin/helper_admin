@@ -6,6 +6,13 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 }
+html,body{
+	height: 100%;
+}
+.wrapper{
+	min-height: 100%;
+}
 .body_admin{
 	min-width: 1200px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVHjaYrx487GQMBcTEzOTkBDXu7ffGP7/Z/r//7+wCM+fv38BAgwAsEcN7FpOp6YAAAAASUVORK5CYII=');
 }

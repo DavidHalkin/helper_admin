@@ -43,6 +43,7 @@
     "vinyl-buffer": "^1.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.13.0",
     "overlayscrollbars": "^1.7.1"
   }
 }
