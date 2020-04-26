@@ -1,0 +1,30 @@
+$theme-colors: (
+   "primary": #0081b8,
+   "primary_light": #0092d0,
+   "success": #37ab2f,
+   "dark_blue": #001428,
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$input-focus-box-shadow: none;
+
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none !important;
+
+// $body-color: #8895a6;
+// $btn-border-radius: 9px;
+// $input-border-radius: 9px;
+
+// $link-color:#1571ae;
+// $link-hover-color: $link-color;
+
+// $rounded-pill: 9px;
+
+
+// $font-size-base: 1.4rem;

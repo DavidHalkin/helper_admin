@@ -1,0 +1,11 @@
+@import
+	'_custom_bootstrap_vatiables.scss',
+	'../../bower_components/bootstrap/scss/_functions.scss',
+	'../../bower_components/bootstrap/scss/_variables.scss',
+	'../../bower_components/bootstrap/scss/_mixins.scss';
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.body_admin{
+	min-width: 1200px;
+}
