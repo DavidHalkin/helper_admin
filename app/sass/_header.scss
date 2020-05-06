@@ -23,4 +23,69 @@
 			}
 		}
 	}
+	.btn-sm{
+		font-size: 13px;
+	}
+	.settings_link{
+		color: #fff;
+		&:hover{
+			text-decoration: none;
+		}
+		span{
+			font-size: 13px;
+		}
+	}
+	.btn_settings_admin{
+		max-width: 150px;
+		width: 100%;
+		i{
+			&.fad{
+				&:after{
+					color: theme-color("danger");
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.form_group_search{
+		position: relative;
+		transition: all 0.1s ease-in;
+		width: 200px;
+		.form-control{
+			font-size: 13px;
+			background: theme-color("dark");
+			color: #fff;
+			border: 0;
+			padding-right: 25px;
+		}
+		i{
+			position: absolute;
+			top: 50%;
+			transform:translateY(-50%);
+			color: #fff;
+			right: 10px;
+			font-size: 13px;
+
+		}
+		&.opened{
+			width: 350px;
+			.form-control{
+				background: #fff;
+				color: #000;
+			}
+			i{
+				color: #000;
+			}
+		}
+	}
+}
+.dropdown_lang{
+	.dropdown-menu{
+		padding:3px 0;
+		a{
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 14px;
+		}
+	}
 }

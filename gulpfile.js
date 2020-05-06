@@ -99,6 +99,8 @@ gulp.task('scripts', function() {
 		'bower_components/jquery/dist/jquery.min.js',
 		// 'bower_components/air-datepicker/dist/js/datepicker.min.js',
 		'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js',
+		'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
+		'bower_components/chart.js/dist/Chart.bundle.min.js',
 		// 'node_modules/overlayscrollbars/js/jquery.overlayScrollbars.min.js',
 		])
 		// .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -111,6 +113,8 @@ gulp.task('scripts', function() {
 gulp.task('css-libs', ['sass'], function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'node_modules/@fortawesome/fontawesome-pro/css/all.css',
+		'bower_components/bootstrap-select/dist/css/bootstrap-select.min.css',
+		'bower_components/chart.js/dist/Chart.min.css',
 		// 'bower_components/air-datepicker/dist/css/datepicker.min.css',
 		// 'node_modules/overlayscrollbars/css/OverlayScrollbars.min.css',
 		])

@@ -7,8 +7,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/custom_bootstrap.css">
 		<link rel="stylesheet" href="css/libs.min.css">
-		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-		<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
 		<link rel="stylesheet" href="css/all.css">
 		<title>#</title>
 	</head>
@@ -276,117 +274,119 @@
 				</div>
 				<div class="content_wrapper_main px-0 col d-flex flex-column">
 					<div class="content_wrapper px-3 pt-3">
-						<h1 class="pb-3">Lorem ipsum dolor sit amet..</h1>
-						<div class="row mx-n2">
-							<div class="col-6 px-2">
+						<!-- <h1 class="pb-3">Редактирование каталога услуг</h1> -->
+						<div class="row">
+							<div class="col-12">
 								<div class="card card_etc">
-									<h5 class="card-header">Крутейший график</h5>
+									<h5 class="card-header">Редактирование каталога услуг</h5>
 									<div class="card-body">
-										<canvas id="myChart"></canvas>
-									</div>
-								</div>
-								<div class="card card_etc">
-									<h5 class="card-header">Последнеи оплаты</h5>
-									<div class="card-body">
-										
-									</div>
-								</div>
-								<div class="card card_etc">
-									<h5 class="card-header">Последние заказы</h5>
-									<div class="card-body">
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-6 px-2 mb-3">
-								<div class="card card_etc">
-									<h5 class="card-header">Статистика</h5>
-									<div class="card-body pt-2">
-										<ul class="nav nav-tabs pl-2 nav_tabs" id="myTab" role="tablist">
-											<li class="nav-item">
-												<a class="nav-link active" id="tabl_1-tab" data-toggle="tab" href="#tabl_1" role="tab" aria-controls="tabl_1" aria-selected="true">Таб какой-то 1</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" id="tabl_2-tab" data-toggle="tab" href="#tabl_2" role="tab" aria-controls="tabl_2" aria-selected="false">Таб какой-то 2</a>
-											</li>
-										</ul>
-										<div class="tab-content" id="myTabContent">
-											<div class="tab-pane fade show active" id="tabl_1" role="tabpanel" aria-labelledby="tabl_1-tab">
-												<table id="table_data_1" class="table table-striped my-0 table-hover dataTables_style dataTables_minimal_js" style="width:100%;">
-													<thead>
-														<tr>
-															<th data-orderable="false" class="border-top-0">&nbsp;</th>
-															<th class="text-center border-top-0">Заказано услуг</th>
-															<th class="text-center border-top-0">Регистраций</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>Сегодня:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">33</td>
-														</tr>
-														<tr>
-															<td>Вчера:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">33</td>
-														</tr>
-														<tr>
-															<td>Позавчера:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">33</td>
-														</tr>
-														<tr>
-															<td>Месяц назад:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">3</td>
-														</tr>
-													</tbody>
-												</table>
+										<div class="row">
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label for="h1">Название категории:</label>
+													<input type="text" class="form-control" id="h1">
+												</div>
 											</div>
-											<div class="tab-pane fade" id="tabl_2" role="tabpanel" aria-labelledby="tabl_2-tab">
-												<table id="table_data_2" class="table table-striped my-0 table-hover dataTables_style dataTables_minimal_js" style="width:100%;">
-													<thead>
-														<tr>
-															<th data-orderable="false" class="border-top-0">&nbsp;</th>
-															<th class="text-center border-top-0">Заказано услуг</th>
-															<th class="text-center border-top-0">Регистраций</th>
-															<th class="text-center border-top-0">Всего услуг</th>
-															<th class="text-center border-top-0">Создано страниц</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>Сегодня:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">33</td>
-															<td class="text-center">377</td>
-															<td class="text-center">2333333</td>
-														</tr>
-														<tr>
-															<td>Позавчера:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">3663</td>
-															<td class="text-center">7</td>
-															<td class="text-center">2</td>
-														</tr>
-														<tr>
-															<td>Месяц назад:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">33</td>
-															<td class="text-center">4</td>
-															<td class="text-center">2</td>
-														</tr>
-													</tbody>
-												</table>
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label>Родительская категория:</label>
+													<div class="d-block">
+														<select class="form-control bootstrap_select bootstrap_select_js" data-live-search="true" title="Choose one of the following...">
+															<option data-icon="fad fa-acorn fa-fw">harbecue</option>
+															<option data-icon="far fa-heart fa-fw">harbecue</option>
+															<option data-icon="fad fa-cannabis fa-fw">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ullam, doloribus quam quasi, omnis nobis commodi consectetur modi doloremque nostrum quis corporis iusto dicta ducimus at enim nihil nisi reiciendis.</option>
+															<option>Mustard</option>
+															<option>Ketchup</option>
+															<option>Barbecue</option>
+															<option>sarbecue</option>
+															<option>darbecue</option>
+															<option>farbecue</option>
+															<option>garbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>harbecue</option>
+															<option>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt reiciendis consectetur deleniti. Iure aut quos magnam eaque. Alias ratione laboriosam perspiciatis laudantium iusto ea sunt libero impedit, repellendus praesentium. Odit.</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label for="he">Цена:</label>
+													<input type="text" class="form-control" id="he">
+												</div>
+											</div>
+											
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label for="hed">Url:</label>
+													<input type="text" class="form-control" id="hed" value="byitovyie_uslugi">
+												</div>
+											</div>
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label for="hedasd">Полное название:</label>
+													<input type="text" class="form-control" id="hedasd" value="">
+												</div>
+											</div>
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label for="hedasd">Сортировка (0-выше, 99-ниже):</label>
+													<input type="text" class="form-control" id="hedasd" value="0">
+												</div>
+											</div>
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label for="hedasd">Доп вопросы:</label>
+													<div class="d-block"><a href="#" class="btn btn-link px-0">Дополнительные вопросы</a></div>
+												</div>
+											</div>
+											<div class="col-4 pb-4">
+												<div class="form-group">
+													<label for="hedasd">Иконка:</label>
+													<div class="input-group  loader_ico loader_ico_js">
+														<input type="text" class="form-control" placeholder="Recipient's username" value="">
+														<div class="input-group-append">
+															<span class="input-group-text">
+																<i class="fal fa-acorn"></i>
+															</span>
+														</div>
+													</div>
+													<small class="form-text text-muted">
+														Иконки с <a href="https://fontawesome.com/icons?d=gallery" target="_blank">fontawesome.com</a>, вводить класс через пробел
+														<span class="text-success"> fas fa-acorn</span>
+													</small>
+												</div>
+											</div>
+											<div class="col-4 pb-4">
+												<div class="custom-control custom-switch mt_custom_switch switch-lg">
+													<input type="checkbox" class="custom-control-input" id="customSwitch1">
+													<label class="custom-control-label" for="customSwitch1">Главный раздел</label>
+												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="card card_etc">
-									<h5 class="card-header">Журнал администрирования</h5>
-									<div class="card-body">
-										
+										<div class="row justify-content-center py-3">
+											<div class="col-2">
+												<button class="btn btn-secondary btn-block btn-lg">Назад</button>
+											</div>
+											<div class="col-2">
+												<button class="btn btn-primary btn-block btn-lg">Сохранить</button>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -407,44 +407,5 @@
 		<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 		<script src="js/Chart.bundle.min.js"></script>
 		<script src="js/main.js"></script>
-		<script>
-			var ctx = document.getElementById('myChart').getContext('2d');
-			var myChart = new Chart(ctx, {
-			    type: 'bar',
-			    data: {
-			        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-			        datasets: [{
-			            label: '# of Votes',
-			            data: [12, 19, 3, 5, 2, 3],
-			            backgroundColor: [
-			                'rgba(255, 99, 132, 0.2)',
-			                'rgba(54, 162, 235, 0.2)',
-			                'rgba(255, 206, 86, 0.2)',
-			                'rgba(75, 192, 192, 0.2)',
-			                'rgba(153, 102, 255, 0.2)',
-			                'rgba(255, 159, 64, 0.2)'
-			            ],
-			            borderColor: [
-			                'rgba(255, 99, 132, 1)',
-			                'rgba(54, 162, 235, 1)',
-			                'rgba(255, 206, 86, 1)',
-			                'rgba(75, 192, 192, 1)',
-			                'rgba(153, 102, 255, 1)',
-			                'rgba(255, 159, 64, 1)'
-			            ],
-			            borderWidth: 1
-			        }]
-			    },
-			    options: {
-			        scales: {
-			            yAxes: [{
-			                ticks: {
-			                    beginAtZero: true
-			                }
-			            }]
-			        }
-			    }
-			});
-		</script>
 	</body>
 </html>

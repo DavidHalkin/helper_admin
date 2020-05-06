@@ -9,8 +9,10 @@
   "license": "ISC",
   "homepage": "",
   "dependencies": {
-    "jquery": "^3.2.1",
-    "bootstrap": "^4.2.1"
+    "jquery": "3.4.1",
+    "bootstrap": "^4.2.1",
+    "bootstrap-select": "^1.13.16",
+    "chart.js": "^2.9.3"
   },
   "devDependencies": {}
 }

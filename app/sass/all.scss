@@ -5,11 +5,24 @@
 '../../bower_components/bootstrap/scss/_mixins.scss',
 '_param',
 'header',
+'_footer.scss',
+'_card.scss',
 '_sidebar.scss';
 .main_wrapper{
 	padding-top:60px;
 	flex:1 0  auto;
-	.content_wrapper{
+	min-width: 0;
+	.content_wrapper_main{
 		border-left: 1px solid #a4b9cc;
+		min-width: 0;
+		.content_wrapper{
+			flex:1 0 auto;
+			padding-bottom: 30px;
+			h1{
+				color: #25282c;
+				font-size: 22px;
+				text-shadow: 0 1px white;
+			}
+		}
 	}
 }
