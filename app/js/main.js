@@ -71,16 +71,28 @@ $(document).ready(function() {
 	});
 	// custom select
 	$('.bootstrap_select_js').selectpicker();
+
 	// dataTables
 	$('.dataTables_js').DataTable({
 		responsive: true
 	});
+
 	$('.dataTables_minimal_js').DataTable({
 		"responsive": false,
 		// "ordering": false,
 		"bPaginate": false, //hide pagination
 		"bFilter": false, //hide Search bar
 		"bInfo": false, // hide showing entries
+
+	});
+	// with scroll X
+	$('.dataTables_minimal_scroll_X_js').DataTable({
+		"responsive": false,
+		// "ordering": false,
+		"bPaginate": false, //hide pagination
+		"bFilter": false, //hide Search bar
+		"bInfo": false, // hide showing entries
+		"scrollX": true
 
 	});
 });

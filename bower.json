@@ -12,7 +12,9 @@
     "jquery": "3.4.1",
     "bootstrap": "^4.2.1",
     "bootstrap-select": "^1.13.16",
-    "chart.js": "^2.9.3"
+    "chart.js": "^2.9.3",
+    "datatables.net-bs4": "^3.2.2",
+    "datatables.net-responsive-bs4": "^2.2.3"
   },
   "devDependencies": {}
 }

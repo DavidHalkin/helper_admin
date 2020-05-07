@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet"> -->
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/custom_bootstrap.css">
 		<link rel="stylesheet" href="css/libs.min.css">
-		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-		<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+		<link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="css/responsive.dataTables.min.css">
 		<link rel="stylesheet" href="css/all.css">
 		<title>#</title>
 	</head>
@@ -389,7 +388,7 @@
 													<th>Сортировка (0-выше, 99-ниже)</th>
 													<th data-priority="2">Главный раздел</th>
 													<th>URL</th>
-													<th data-priority="1" style="width: 100px;">Редактировать</th>
+													<th data-priority="1"  data-orderable="false" style="width: 100px;">Редактировать</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -450,9 +449,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="footer px-3">
+					<!-- <div class="footer px-3">
 						footer
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -460,9 +459,11 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/bootstrap-select.min.js"></script>
+		
 		<script src="js/jquery.dataTables.min.js"></script>
 		<script src="js/dataTables.bootstrap4.min.js"></script>
-		<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+		<script src="js/dataTables.responsive.min.js"></script>
+
 		<script src="js/Chart.bundle.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>

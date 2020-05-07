@@ -3,12 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet"> -->
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/custom_bootstrap.css">
 		<link rel="stylesheet" href="css/libs.min.css">
-		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-		<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+		<link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="css/responsive.dataTables.min.css">
 		<link rel="stylesheet" href="css/all.css">
 		<title>#</title>
 	</head>
@@ -280,7 +279,7 @@
 						<div class="row mx-n2">
 							<div class="col-6 px-2">
 								<div class="card card_etc">
-									<h5 class="card-header">Крутейший график</h5>
+									<h5 class="card-header">Прибыль</h5>
 									<div class="card-body">
 										<canvas id="myChart"></canvas>
 									</div>
@@ -304,48 +303,58 @@
 									<div class="card-body pt-2">
 										<ul class="nav nav-tabs pl-2 nav_tabs" id="myTab" role="tablist">
 											<li class="nav-item">
-												<a class="nav-link active" id="tabl_1-tab" data-toggle="tab" href="#tabl_1" role="tab" aria-controls="tabl_1" aria-selected="true">Таб какой-то 1</a>
+												<a class="nav-link active" id="tabl_1-tab" data-toggle="tab" href="#tabl_1" role="tab" aria-controls="tabl_1" aria-selected="true">Пл.Услуги</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" id="tabl_2-tab" data-toggle="tab" href="#tabl_2" role="tab" aria-controls="tabl_2" aria-selected="false">Таб какой-то 2</a>
+												<a class="nav-link" id="tabl_2-tab" data-toggle="tab" href="#tabl_2" role="tab" aria-controls="tabl_2" aria-selected="false">Пользователи</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="tabl_3-tab" data-toggle="tab" href="#tabl_3" role="tab" aria-controls="tabl_3" aria-selected="false">Новых</a>
 											</li>
 										</ul>
 										<div class="tab-content" id="myTabContent">
 											<div class="tab-pane fade show active" id="tabl_1" role="tabpanel" aria-labelledby="tabl_1-tab">
-												<table id="table_data_1" class="table table-striped my-0 table-hover dataTables_style dataTables_minimal_js" style="width:100%;">
+												<table id="table_data_1" class="table table-striped my-0 display nowrap table-hover dataTables_style dataTables_minimal_scroll_X_js" style="width:100%;">
 													<thead>
 														<tr>
 															<th data-orderable="false" class="border-top-0">&nbsp;</th>
-															<th class="text-center border-top-0">Заказано услуг</th>
-															<th class="text-center border-top-0">Регистраций</th>
+															<th class="border-top-0 text-center">PRO</th>
+															<th class="border-top-0 text-center">TURBO</th>
+															<th class="border-top-0 text-center">БезЛимит 1</th>
+															<th class="border-top-0 text-center">БезЛимит 7</th>
+															<th class="border-top-0 text-center">БезЛимит 14</th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
-															<td>Сегодня:</td>
-															<td class="text-center">123233</td>
+															<td>Месяц</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
 															<td class="text-center">33</td>
 														</tr>
 														<tr>
-															<td>Вчера:</td>
-															<td class="text-center">123233</td>
+															<td>Неделя</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33434343</td>
 															<td class="text-center">33</td>
 														</tr>
 														<tr>
-															<td>Позавчера:</td>
-															<td class="text-center">123233</td>
+															<td>Сутки</td>
 															<td class="text-center">33</td>
-														</tr>
-														<tr>
-															<td>Месяц назад:</td>
-															<td class="text-center">123233</td>
-															<td class="text-center">3</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
+															<td class="text-center">33</td>
 														</tr>
 													</tbody>
 												</table>
 											</div>
 											<div class="tab-pane fade" id="tabl_2" role="tabpanel" aria-labelledby="tabl_2-tab">
-												<table id="table_data_2" class="table table-striped my-0 table-hover dataTables_style dataTables_minimal_js" style="width:100%;">
+												<table id="table_data_2" class="table table-striped my-0  display nowrap table-hover dataTables_style dataTables_minimal_scroll_X_js" style="width:100%;">
 													<thead>
 														<tr>
 															<th data-orderable="false" class="border-top-0">&nbsp;</th>
@@ -380,6 +389,24 @@
 													</tbody>
 												</table>
 											</div>
+											<div class="tab-pane fade" id="tabl_3" role="tabpanel" aria-labelledby="tabl_3-tab">
+												<table id="table_data_3" class="table table-striped my-0  display nowrap table-hover dataTables_style dataTables_minimal_scroll_X_js" style="width:100%;">
+													<thead>
+														<tr>
+															<th data-orderable="false"  class="text-center border-top-0">Новых посетили сайт</th>
+															<th data-orderable="false"  class="text-center border-top-0">Из них зарегистрировалось</th>
+															<th data-orderable="false"  class="text-center border-top-0">Из них добавило объявление</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="text-center">33</td>
+															<td class="text-center">377</td>
+															<td class="text-center">2333333</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -392,9 +419,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="footer px-3">
+					<!-- <div class="footer px-3">
 						footer
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -402,9 +429,11 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/bootstrap-select.min.js"></script>
+
 		<script src="js/jquery.dataTables.min.js"></script>
 		<script src="js/dataTables.bootstrap4.min.js"></script>
-		<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+		<script src="js/dataTables.responsive.min.js"></script>
+
 		<script src="js/Chart.bundle.min.js"></script>
 		<script src="js/main.js"></script>
 		<script>
