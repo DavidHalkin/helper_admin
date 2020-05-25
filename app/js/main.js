@@ -1,67 +1,37 @@
 
-// multilevel menu Start
-(function($) {
-	$.fn.vmenuModule = function(option) {
-		var obj,
-			item;
-		var options = $.extend({
-				Speed: 220,
-				autostart: true,
-				autohide: 1
-			},
-			option);
-		obj = $(this);
-
-		item = obj.find("ul").parent("li").children("a");
-		item.attr("data-option", "off");
-
-		item.unbind('click').on("click", function() {
-			var a = $(this);
-			if (options.autohide) {
-				a.parent().parent().find("a[data-option='on']").parent("li").children("ul").slideUp(options.Speed / 1.2,
-					function() {
-						$(this).parent("li").children("a").attr("data-option", "off");
-					})
-			}
-			if (a.attr("data-option") == "off") {
-				a.parent("li").children("ul").slideDown(options.Speed,
-					function() {
-						a.attr("data-option", "on");
-					});
-			}
-			if (a.attr("data-option") == "on") {
-				a.attr("data-option", "off");
-				a.parent("li").children("ul").slideUp(options.Speed)
-			}
-		});
-		if (options.autostart) {
-			obj.find("a").each(function() {
-
-				$(this).parent("li").parent("ul").slideDown(options.Speed,
-					function() {
-						$(this).parent("li").children("a").attr("data-option", "on");
-					})
-			})
-		}
-
-	}
-})(window.jQuery || window.Zepto);
-// multilevel menu END
 
 $.extend( $.fn.dataTable.defaults, {
     responsive: true
 } );
 $(document).ready(function() {
-	$(".multilevel_menu_js").vmenuModule({
-		Speed: 200,
-		autostart: false,
-		autohide: false
+	$('.multilevel_menu_js a').tooltip({
+		trigger : "hover",
+		placement:"right",
+		title : function(){
+			var text = $(this).find('span').text();
+			return (text.length > 20) ? text : "";
+		}
 	});
+
+// menu in sidebar START
 	$('.multilevel_menu_js li:has(ul)').addClass("has_drop");
-	$('.multilevel_menu_js li.has_drop > a').on("click",function(){
+	$('.multilevel_menu_js li.has_drop > a').wrap("<span class='title_row'></span>");
+	$('.multilevel_menu_js li.has_drop .title_row').append("<a href='#' class='fal fa-plus-square show_drop show_drop_js'></a>");
+	$(".show_drop_js").click(function(){
+		$(this).closest("li").find("ul").first().slideToggle("fast");
+		 if ($(this).hasClass("fa-plus-square")) {
+                // $this.html("Убрать");
+                $(this).removeClass("fa-plus-square");
+                $(this).addClass("fa-minus-square");
+            } else {
+                $(this).removeClass("fa-minus-square");
+                $(this).addClass("fa-plus-square");
+            }
 		return false;
 	});
-	
+// menu in sidebar END
+
+
 	// search in header
 	$(".form_group_search_js input").focusin(function(){
 		$(this).closest(".form_group_search_js").addClass("opened");
