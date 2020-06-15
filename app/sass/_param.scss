@@ -141,3 +141,8 @@ table.dataTable.nowrap th, table.dataTable.nowrap td{
 		white-space:normal;
 	}
 }
+.loader_ico {
+	> .form-control{
+		flex: 1 1 0%;
+	}
+}
