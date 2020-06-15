@@ -101,6 +101,7 @@ gulp.task('scripts', function() {
 		'bower_components/bootstrap/dist/js/bootstrap.bundle.min.js',
 		'bower_components/bootstrap-select/dist/js/bootstrap-select.min.js',
 		'bower_components/chart.js/dist/Chart.bundle.min.js',
+		'bower_components/air-datepicker/dist/js/datepicker.min.js',
 
 		// 'node_modules/overlayscrollbars/js/jquery.overlayScrollbars.min.js',
 		])
@@ -116,6 +117,7 @@ gulp.task('css-libs', ['sass'], function() {
 		'node_modules/@fortawesome/fontawesome-pro/css/all.css',
 		'bower_components/bootstrap-select/dist/css/bootstrap-select.min.css',
 		'bower_components/chart.js/dist/Chart.min.css',
+		'bower_components/air-datepicker/dist/css/datepicker.min.css',
 
 		// 'bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css',
 		// 'bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css',

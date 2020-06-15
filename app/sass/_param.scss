@@ -136,3 +136,8 @@ table.dataTable{
 		}
 	}
 }
+table.dataTable.nowrap th, table.dataTable.nowrap td{
+	.dtr-data{
+		white-space:normal;
+	}
+}
