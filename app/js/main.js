@@ -19,6 +19,7 @@ $(document).ready(function() {
 	$('.multilevel_menu_js li.has_drop .title_row').append("<a href='#' class='fal fa-plus-square show_drop show_drop_js'></a>");
 	$(".show_drop_js").click(function(){
 		$(this).closest("li").find("ul").first().slideToggle("fast");
+		$(this).closest("li").toggleClass("active");
 		 if ($(this).hasClass("fa-plus-square")) {
                 // $this.html("Убрать");
                 $(this).removeClass("fa-plus-square");
@@ -44,8 +45,11 @@ $(document).ready(function() {
 
 	// dataTables
 	$('.dataTables_js').DataTable({
-		responsive: true
+		responsive: true,
+		"order": [[ 0, "desc" ]]
 	});
+	
+	 
 
 	$('.dataTables_minimal_js').DataTable({
 		"responsive": false,

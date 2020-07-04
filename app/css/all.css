@@ -166,6 +166,12 @@ table.dataTable.nowrap th .dtr-data, table.dataTable.nowrap td .dtr-data { white
 
 .multilevel_menu li a { position: relative; padding-right: 0; }
 
+.multilevel_menu li a.active { background: #f2f5f6; }
+
+.multilevel_menu li.active > .title_row a:first-child { background: #f2f5f6; }
+
+.multilevel_menu li.active > ul { display: block; }
+
 .multilevel_menu ul { display: none; }
 
 .multilevel_menu ul a:not(.show_drop) { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; padding-left: 25px; }

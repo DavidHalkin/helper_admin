@@ -135,6 +135,18 @@
 		a{
 			position: relative;
 			padding-right: 0;
+			&.active{
+				background: #f2f5f6;
+
+			}
+		}
+		&.active{
+			> .title_row a:first-child{
+				background: #f2f5f6;
+			}
+			> ul{
+				display: block;
+			}
 		}
 	}
 	ul{
